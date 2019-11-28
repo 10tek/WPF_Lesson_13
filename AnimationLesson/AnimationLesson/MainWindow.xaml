@@ -1,0 +1,43 @@
+﻿<Window x:Class="AnimationLesson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnimationLesson"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Ellipse Fill="Red" Stroke="Black" RenderTransformOrigin="0.644,0.364">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform/>
+                    <RotateTransform/>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Width="320" Height="320" Stroke="Black" StrokeThickness="4">         
+        </Ellipse>
+        <Ellipse Width="100" Height="100" Fill="Black"/>
+        <Ellipse Width="70" Height="70" Fill="Black" Margin="0,0,0,300"/>
+        <Ellipse Width="70" Height="40" Fill="Black" Margin="370,40,356,357">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="-27.038"/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Width="70" Height="70" Fill="Black" Margin="0,140,270,0"/>
+        <Ellipse Width="70" Height="40" Fill="Black" Margin="0,180,320,0">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="-27.038"/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Rectangle x:Name="loadRectangle" Fill="AntiqueWhite" Width="100" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"></Rectangle>
+        <Button x:Name="loadBtn" Height="50" Width="100" Content="Загрузить" Click="LoadBtnClick"></Button>
+    </Grid>
+</Window>
